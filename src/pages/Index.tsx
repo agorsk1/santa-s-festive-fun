@@ -122,10 +122,10 @@ const Index = () => {
                 transition={{ delay: 0.2 }}
               >
                 <h1 className="text-5xl md:text-7xl font-christmas text-accent mb-2 drop-shadow-lg">
-                  Santa's Mind Games
+                  Świąteczne Łamigłówki
                 </h1>
                 <p className="text-xl md:text-2xl text-foreground/80 font-body">
-                  A Magical Christmas Adventure
+                  Magiczna Świąteczna Przygoda
                 </p>
               </motion.div>
 
@@ -136,7 +136,7 @@ const Index = () => {
                 transition={{ delay: 0.4 }}
               >
                 <SantaMascot 
-                  message="Ho Ho Ho! Can you prove you're ready for your Christmas surprise? Complete 5 magical quizzes to unlock a special gift!" 
+                  message="Ho Ho Ho! Czy jesteś gotowy na świąteczną niespodziankę? Ukończ 5 magicznych quizów, aby odblokować specjalny prezent!" 
                   size="large"
                 />
               </motion.div>
@@ -148,19 +148,19 @@ const Index = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6 }}
               >
-                <h2 className="text-2xl font-christmas text-accent mb-4">How to Play</h2>
+                <h2 className="text-2xl font-christmas text-accent mb-4">Jak Grać</h2>
                 <ul className="text-left text-foreground/80 font-body space-y-3 mb-6">
                   <li className="flex items-start gap-3">
                     <span className="text-accent">🎄</span>
-                    <span>Complete 5 different quiz categories</span>
+                    <span>Ukończ 5 różnych kategorii quizów</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent">⭐</span>
-                    <span>Score at least 70% to pass each quiz</span>
+                    <span>Zdobądź minimum 70% aby zdać każdy quiz</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent">🎁</span>
-                    <span>Unlock Santa's special surprise at the end!</span>
+                    <span>Odblokuj specjalną niespodziankę od Mikołaja!</span>
                   </li>
                 </ul>
                 
@@ -169,7 +169,7 @@ const Index = () => {
                   className="btn-santa w-full text-lg"
                 >
                   <Sparkles className="mr-2 w-5 h-5" />
-                  Start Adventure
+                  Rozpocznij Przygodę
                 </Button>
               </motion.div>
 
@@ -190,10 +190,10 @@ const Index = () => {
               {/* Header */}
               <div className="text-center mb-8">
                 <h1 className="text-3xl md:text-4xl font-christmas text-accent mb-2">
-                  Choose Your Challenge
+                  Wybierz Wyzwanie
                 </h1>
                 <p className="text-muted-foreground font-body">
-                  Complete quizzes in order to progress
+                  Ukończ quizy po kolei, aby przejść dalej
                 </p>
               </div>
 
@@ -210,10 +210,10 @@ const Index = () => {
                 <SantaMascot 
                   message={
                     progress.completedQuizzes.length === 0
-                      ? "Let's begin your journey! Start with the first challenge."
+                      ? "Rozpocznijmy Twoją podróż! Zacznij od pierwszego wyzwania."
                       : progress.completedQuizzes.length === 4
-                      ? "One more quiz to go! You're almost there!"
-                      : `Great progress! ${5 - progress.completedQuizzes.length} more quizzes to unlock the surprise!`
+                      ? "Jeszcze jeden quiz! Prawie na mecie!"
+                      : `Świetna robota! Jeszcze ${5 - progress.completedQuizzes.length} quizów do odblokowania niespodzianki!`
                   }
                   size="small"
                 />

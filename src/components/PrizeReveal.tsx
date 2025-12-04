@@ -50,7 +50,7 @@ const PrizeReveal = ({ onPlayAgain }: PrizeRevealProps) => {
     // Create a link to download the prize image
     const link = document.createElement('a');
     link.href = '/prize-image.png';
-    link.download = 'santas-christmas-surprise.png';
+    link.download = 'swiateczna-niespodzianka-mikolaja.png';
     link.click();
   };
 
@@ -58,8 +58,8 @@ const PrizeReveal = ({ onPlayAgain }: PrizeRevealProps) => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "I completed Santa's Mind Games!",
-          text: "I solved all 5 puzzles and unlocked Santa's special Christmas surprise! 🎅🎄",
+          title: "Ukończyłem Świąteczne Łamigłówki!",
+          text: "Rozwiązałem wszystkie 5 zagadek i odblokowałem specjalną świąteczną niespodziankę od Mikołaja! 🎅🎄",
           url: window.location.href,
         });
       } catch (err) {
@@ -94,7 +94,7 @@ const PrizeReveal = ({ onPlayAgain }: PrizeRevealProps) => {
             Ho Ho Ho!
           </h1>
           <p className="text-xl md:text-2xl text-foreground font-body max-w-lg mx-auto">
-            You've proven yourself worthy of Santa's special Christmas surprise!
+            Udowodniłeś, że zasługujesz na specjalną świąteczną niespodziankę od Mikołaja!
           </p>
         </motion.div>
 
@@ -127,10 +127,10 @@ const PrizeReveal = ({ onPlayAgain }: PrizeRevealProps) => {
                     <span>🎄</span>
                   </div>
                   <p className="mt-4 text-lg font-christmas text-accent">
-                    Merry Christmas!
+                    Wesołych Świąt!
                   </p>
                   <p className="text-sm text-muted-foreground font-body mt-2">
-                    From Santa & the Elves
+                    Od Mikołaja i Elfów
                   </p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ const PrizeReveal = ({ onPlayAgain }: PrizeRevealProps) => {
             ))}
           </div>
           <p className="text-muted-foreground font-body">
-            All 5 quizzes completed! You're a true Christmas champion!
+            Wszystkie 5 quizów ukończone! Jesteś prawdziwym świątecznym mistrzem!
           </p>
         </motion.div>
 
@@ -194,10 +194,10 @@ const PrizeReveal = ({ onPlayAgain }: PrizeRevealProps) => {
           transition={{ delay: 1.5 }}
         >
           <Button onClick={handleShare} className="btn-elf">
-            <Share2 className="mr-2 w-5 h-5" /> Share
+            <Share2 className="mr-2 w-5 h-5" /> Udostępnij
           </Button>
           <Button onClick={onPlayAgain} className="btn-santa">
-            <RotateCcw className="mr-2 w-5 h-5" /> Play Again
+            <RotateCcw className="mr-2 w-5 h-5" /> Zagraj Ponownie
           </Button>
         </motion.div>
       </div>
