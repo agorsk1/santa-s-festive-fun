@@ -63,8 +63,8 @@ const QuizScreen = ({ category, onComplete, onBack }: QuizScreenProps) => {
       >
         <SantaMascot 
           message={passed 
-            ? "Ho Ho Ho! Wonderful job! You've proven yourself worthy!" 
-            : "Don't worry! Even the elves need practice. Give it another try!"
+            ? "Ho Ho Ho! Wspaniała robota! Udowodniłeś, że jesteś godny nagrody!" 
+            : "Nie martw się! Nawet elfy potrzebują praktyki. Spróbuj jeszcze raz!"
           }
           size="large"
         />
@@ -76,13 +76,13 @@ const QuizScreen = ({ category, onComplete, onBack }: QuizScreenProps) => {
           transition={{ delay: 0.3 }}
         >
           <h2 className={`text-4xl font-christmas mb-4 ${passed ? 'text-accent' : 'text-primary'}`}>
-            {passed ? '🎉 Quiz Passed!' : '❄️ Try Again!'}
+            {passed ? '🎉 Quiz Zaliczony!' : '❄️ Spróbuj Ponownie!'}
           </h2>
           <p className="text-xl text-foreground mb-2 font-body">
-            You got <span className="text-accent font-bold">{correctAnswers}</span> out of <span className="font-bold">{totalQuestions}</span> correct
+            Masz <span className="text-accent font-bold">{correctAnswers}</span> z <span className="font-bold">{totalQuestions}</span> poprawnych odpowiedzi
           </p>
           <p className="text-muted-foreground font-body">
-            {passed ? `You needed ${passingScore} to pass` : `You need ${passingScore} correct answers to pass`}
+            {passed ? `Potrzebowałeś ${passingScore} aby zdać` : `Potrzebujesz ${passingScore} poprawnych odpowiedzi aby zdać`}
           </p>
         </motion.div>
 
@@ -94,7 +94,7 @@ const QuizScreen = ({ category, onComplete, onBack }: QuizScreenProps) => {
         >
           {passed ? (
             <Button onClick={() => onComplete(true)} className="btn-santa text-lg">
-              Continue Journey <ArrowRight className="ml-2 w-5 h-5" />
+              Kontynuuj Podróż <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           ) : (
             <>
@@ -107,10 +107,10 @@ const QuizScreen = ({ category, onComplete, onBack }: QuizScreenProps) => {
                 setHintsUsed(0);
                 setQuizComplete(false);
               }} className="btn-santa">
-                <RotateCcw className="mr-2 w-5 h-5" /> Try Again
+                <RotateCcw className="mr-2 w-5 h-5" /> Spróbuj Ponownie
               </Button>
               <Button onClick={onBack} variant="outline" className="border-border text-foreground hover:bg-muted">
-                Back to Categories
+                Powrót do Kategorii
               </Button>
             </>
           )}
@@ -128,7 +128,7 @@ const QuizScreen = ({ category, onComplete, onBack }: QuizScreenProps) => {
           <h2 className="text-xl font-christmas text-accent">{category.name}</h2>
         </div>
         <div className="text-sm text-muted-foreground font-body">
-          Question {currentQuestion + 1}/{totalQuestions}
+          Pytanie {currentQuestion + 1}/{totalQuestions}
         </div>
       </div>
 
@@ -177,7 +177,7 @@ const QuizScreen = ({ category, onComplete, onBack }: QuizScreenProps) => {
                   className="text-muted-foreground hover:text-accent"
                 >
                   <Lightbulb className="w-4 h-4 mr-2" />
-                  Use Hint ({2 - hintsUsed} left)
+                  Użyj Podpowiedzi (zostało {2 - hintsUsed})
                 </Button>
               )}
             </div>
@@ -220,10 +220,10 @@ const QuizScreen = ({ category, onComplete, onBack }: QuizScreenProps) => {
               className="mt-6 flex items-center justify-between"
             >
               <p className={`text-lg font-body ${isCorrect ? 'text-secondary' : 'text-destructive'}`}>
-                {isCorrect ? '🎉 Correct!' : '❌ Not quite right'}
+                {isCorrect ? '🎉 Poprawnie!' : '❌ Niestety nie'}
               </p>
               <Button onClick={handleNext} className="btn-elf">
-                {currentQuestion < totalQuestions - 1 ? 'Next Question' : 'See Results'}
+                {currentQuestion < totalQuestions - 1 ? 'Następne Pytanie' : 'Zobacz Wyniki'}
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </motion.div>

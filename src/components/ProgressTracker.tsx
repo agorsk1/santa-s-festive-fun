@@ -19,8 +19,8 @@ const ProgressTracker = ({ currentQuiz, completedQuizzes, onGiftClick }: Progres
   return (
     <div className="w-full max-w-md mx-auto">
       <div className="flex justify-between items-center mb-4">
-        <span className="text-sm text-muted-foreground font-body">Progress</span>
-        <span className="text-sm font-semibold text-accent font-body">{completedQuizzes.length}/5 Quizzes</span>
+        <span className="text-sm text-muted-foreground font-body">Postęp</span>
+        <span className="text-sm font-semibold text-accent font-body">{completedQuizzes.length}/5 Quizów</span>
       </div>
       
       {/* Progress bar */}
