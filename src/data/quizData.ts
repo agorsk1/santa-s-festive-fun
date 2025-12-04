@@ -180,12 +180,12 @@ export const categories: Category[] = [
         hint: 'Zielone drzewo',
       },
       {
-        id: 'npw3',
-        question: 'Które słowo można ułożyć z liter słowa "ŚWIĄTECZNY"?',
-        options: ['ŚWIĘTY', 'CICHY', 'CIEŃ', 'Wszystkie powyższe'],
-        correctAnswer: 2,
-        hint: 'Sprawdź każde!',
-      },
+          id: 'npw3',
+          question: 'Które słowo można ułożyć z liter słowa "ŚWIĄTECZNY"?',
+          options: ['ŚWIĘTY', 'ŚCIĘTY', 'CZYN', 'Żadne z powyższych'],
+          correctAnswer: 2,
+          hint: 'To coś, co robimy - działanie!',
+        },
       {
         id: 'npw4',
         question: 'Uzupełnij świąteczne słowo: PR_ZE_T',
