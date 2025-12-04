@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Download, RotateCcw, Share2 } from 'lucide-react';
+import { RotateCcw, Share2, Ticket, MapPin, Calendar } from 'lucide-react';
 import Snowfall from './Snowfall';
 import confetti from 'canvas-confetti';
 import { useEffect } from 'react';
@@ -98,7 +98,7 @@ const PrizeReveal = ({ onPlayAgain }: PrizeRevealProps) => {
           </p>
         </motion.div>
 
-        {/* Prize reveal */}
+        {/* Prize reveal - Concert Ticket */}
         <motion.div 
           className="relative mb-8"
           initial={{ scale: 0, rotate: -180 }}
@@ -108,31 +108,74 @@ const PrizeReveal = ({ onPlayAgain }: PrizeRevealProps) => {
           {/* Glow effect */}
           <div className="absolute inset-0 bg-accent/30 blur-3xl rounded-full scale-125" />
           
-          {/* Prize container */}
+          {/* Ticket container */}
           <div className="relative bg-gradient-to-br from-accent/20 to-primary/20 p-2 rounded-3xl border-4 border-accent shadow-2xl">
-            <div className="bg-card rounded-2xl p-4 md:p-6">
-              <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-xl flex items-center justify-center overflow-hidden">
-                {/* Festive prize image placeholder */}
-                <div className="text-center">
+            <div className="bg-card rounded-2xl overflow-hidden">
+              {/* Ticket design */}
+              <div className="w-72 md:w-96 bg-gradient-to-br from-purple-900/90 via-indigo-900/90 to-purple-800/90 relative">
+                {/* Ticket header */}
+                <div className="bg-gradient-to-r from-accent to-primary p-4 text-center">
+                  <div className="flex items-center justify-center gap-2 mb-1">
+                    <Ticket className="w-5 h-5 text-white" />
+                    <span className="text-xs uppercase tracking-wider text-white/90 font-body">Bilet na koncert</span>
+                  </div>
+                </div>
+                
+                {/* Main ticket content */}
+                <div className="p-6 text-center">
                   <motion.div 
-                    className="text-8xl md:text-9xl mb-4"
-                    animate={{ y: [0, -10, 0] }}
+                    className="text-5xl md:text-6xl mb-2"
+                    animate={{ y: [0, -5, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
-                    🎁
+                    🎵
                   </motion.div>
-                  <div className="flex justify-center gap-2 text-4xl">
+                  
+                  <h2 className="text-3xl md:text-4xl font-christmas text-white mb-2">
+                    Polo & Pan
+                  </h2>
+                  
+                  <p className="text-accent font-body text-lg mb-6">
+                    Live in Concert
+                  </p>
+                  
+                  {/* Ticket details */}
+                  <div className="space-y-3 text-left bg-black/20 rounded-xl p-4">
+                    <div className="flex items-center gap-3 text-white/90">
+                      <Calendar className="w-5 h-5 text-accent" />
+                      <div>
+                        <p className="text-xs text-white/60 font-body">Data</p>
+                        <p className="font-body font-semibold">07.02.2026</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center gap-3 text-white/90">
+                      <MapPin className="w-5 h-5 text-accent" />
+                      <div>
+                        <p className="text-xs text-white/60 font-body">Miejsce</p>
+                        <p className="font-body font-semibold">Warszawa</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Decorative elements */}
+                  <div className="flex justify-center gap-2 text-2xl mt-4">
                     <span>🎄</span>
-                    <span>⭐</span>
+                    <span>🎶</span>
                     <span>🎄</span>
                   </div>
-                  <p className="mt-4 text-lg font-christmas text-accent">
-                    Wesołych Świąt!
-                  </p>
-                  <p className="text-sm text-muted-foreground font-body mt-2">
-                    Od Mikołaja i Elfów
+                </div>
+                
+                {/* Ticket footer */}
+                <div className="border-t border-dashed border-white/20 p-4 text-center bg-black/10">
+                  <p className="text-sm text-white/70 font-body">
+                    Prezent od Mikołaja 🎅❤️
                   </p>
                 </div>
+                
+                {/* Ticket perforation effect */}
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-8 bg-card rounded-r-full" />
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-8 bg-card rounded-l-full" />
               </div>
             </div>
           </div>
@@ -182,7 +225,7 @@ const PrizeReveal = ({ onPlayAgain }: PrizeRevealProps) => {
             ))}
           </div>
           <p className="text-muted-foreground font-body">
-            Wszystkie 5 quizów ukończone! Jesteś prawdziwym świątecznym mistrzem!
+            Wszystkie 5 quizów ukończone! Zapraszam Cię na koncert Polo & Pan! 🎶
           </p>
         </motion.div>
 

@@ -217,12 +217,12 @@ const QuizScreen = ({ category, onComplete, onBack }: QuizScreenProps) => {
             <motion.div 
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mt-6 flex items-center justify-between"
+              className="mt-6 flex flex-col sm:flex-row items-center sm:justify-between gap-4"
             >
               <p className={`text-lg font-body ${isCorrect ? 'text-secondary' : 'text-destructive'}`}>
                 {isCorrect ? '🎉 Poprawnie!' : '❌ Niestety nie'}
               </p>
-              <Button onClick={handleNext} className="btn-elf">
+              <Button onClick={handleNext} className="btn-elf w-full sm:w-auto">
                 {currentQuestion < totalQuestions - 1 ? 'Następne Pytanie' : 'Zobacz Wyniki'}
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>

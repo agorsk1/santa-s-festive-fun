@@ -44,7 +44,7 @@ export const categories: Category[] = [
       },
       {
         id: 'ct4',
-        question: 'Która kolęda zawiera słowa "Śpij w niebiańskim spokoju"?',
+        question: 'Która kolęda zawiera słowa "Za anielskim głosem pieni"?',
         options: ['O Święta Noc', 'Cicha Noc', 'Wśród Nocnej Ciszy', 'Bóg się Rodzi'],
         correctAnswer: 1,
         hint: 'Spokojna noc...',
@@ -88,77 +88,77 @@ export const categories: Category[] = [
     ],
   },
   {
-    id: 'reindeer-math',
-    name: 'Matematyka Reniferów',
-    icon: '🔢',
-    description: 'Szybkie zadania matematyczne ze świątecznym akcentem',
-    questions: [
-      {
-        id: 'rm1',
-        question: 'Mikołaj ma 12 elfów. Każdy elf zrobił 8 zabawek. Ile zabawek w sumie?',
-        options: ['84', '96', '108', '88'],
-        correctAnswer: 1,
-        hint: 'Pomnóż pracowników przez ich produkcję',
-      },
-      {
-        id: 'rm2',
-        question: 'Jeśli Rudolf leci 150 km na godzinę, jak daleko poleci w 4 godziny?',
-        options: ['500 km', '600 km', '450 km', '550 km'],
-        correctAnswer: 1,
-        hint: 'Prędkość razy czas',
-      },
-      {
-        id: 'rm3',
-        question: 'Pani Mikołajowa upiekła 48 ciasteczek i podzieliła je równo między 8 elfów. Ile ciasteczek dostał każdy elf?',
-        options: ['5', '6', '7', '8'],
-        correctAnswer: 1,
-        hint: 'Czas na dzielenie!',
-      },
-      {
-        id: 'rm4',
-        question: 'Mikołaj odwiedził 25 domów w Wigilię. Jeśli zjadł 3 ciasteczka w każdym domu, ile ciasteczek zjadł?',
-        options: ['65', '70', '75', '80'],
-        correctAnswer: 2,
-        hint: 'To dużo ciasteczek!',
-      },
-    ],
-  },
+      id: 'christmas-movies',
+      name: 'Filmy Bożonarodzeniowe',
+      icon: '🎬',
+      description: 'Szybkie pytania o popularne filmy świąteczne',
+      questions: [
+        {
+          id: 'cm1',
+          question: 'W filmie "Kevin sam w domu", ile razy Kevin ustawia pułapki na włamywaczy?',
+          options: ['3', '5', '7', '10'],
+          correctAnswer: 2,
+          hint: 'Liczba jest większa niż 5!',
+        },
+        {
+          id: 'cm2',
+          question: 'W "Opowieści wigilijnej" Scrooge odwiedzają duchy. Ile ich jest?',
+          options: ['1', '2', '3', '4'],
+          correctAnswer: 3,
+          hint: 'Pomyśl o duchach przeszłości, teraźniejszości i przyszłości.',
+        },
+        {
+          id: 'cm3',
+          question: 'W filmie "Elf" Buddy jest wychowywany przez elfy na biegunie północnym. Ile lat Buddy ma w chwili, gdy odkrywa prawdziwy świat?',
+          options: ['20', '25', '30', '35'],
+          correctAnswer: 2,
+          hint: 'Jest dorosły, ale wciąż bardzo „dziecięcy”',
+        },
+        {
+          id: 'cm4',
+          question: 'W filmie "Świąteczna przerwa" (The Holiday) główne bohaterki zamieniają się domami. Ile jest głównych bohaterek?',
+          options: ['1', '2', '3', '4'],
+          correctAnswer: 1,
+          hint: 'Pomysł polega na wymianie domów między dwoma osobami.',
+        }
+      ]
+    },
   {
-    id: 'snowman-patterns',
-    name: 'Wzory Bałwana',
-    icon: '🎨',
-    description: 'Gry rozpoznawania wzorów wizualnych',
-    questions: [
-      {
-        id: 'sp1',
-        question: 'Co następuje we wzorze? ⭐🎄⭐🎄⭐?',
-        options: ['⭐', '🎄', '🎁', '❄️'],
-        correctAnswer: 1,
-        hint: 'Spójrz na naprzemienność',
-      },
-      {
-        id: 'sp2',
-        question: 'Dokończ sekwencję: 🎅🎅🎄🎅🎅🎄🎅🎅?',
-        options: ['🎅', '🎄', '❄️', '🎁'],
-        correctAnswer: 1,
-        hint: 'Policz ile Mikołajów przed każdą choinką',
-      },
-      {
-        id: 'sp3',
-        question: 'Jaki jest wzór? ❄️❄️🎄❄️❄️🎄❄️❄️?',
-        options: ['❄️', '🎄', '🎅', '⭐'],
-        correctAnswer: 1,
-        hint: 'Dwa płatki śniegu, potem co?',
-      },
-      {
-        id: 'sp4',
-        question: 'Znajdź element niepasujący: 🎄🎄🎄🌲🎄',
-        options: ['Pierwsze drzewo', 'Drugie drzewo', 'Czwarte drzewo', 'Piąte drzewo'],
-        correctAnswer: 2,
-        hint: 'Przyjrzyj się dokładnie każdemu drzewu',
-      },
-    ],
-  },
+      id: 'snowman-patterns',
+      name: 'Wzory Bałwana',
+      icon: '⛄',
+      description: 'Gry rozpoznawania wzorów wizualnych',
+      questions: [
+        {
+          id: 'asp1',
+          question: 'Co następuje we wzorze? ⭐❄️❄️🎄⭐❄️❄️?',
+          options: ['⭐', '🎄', '❄️', '🎅'],
+          correctAnswer: 1,
+          hint: 'Powtarza się sekwencja gwiazda + dwa płatki śniegu + choinka',
+        },
+        {
+          id: 'asp2',
+          question: 'Dokończ sekwencję: 🎅🎄🎅🎄❄️🎅🎄🎅?',
+          options: ['❄️', '🎅', '🎄', '⭐'],
+          correctAnswer: 0,
+          hint: 'Zwróć uwagę na element, który pojawia się po powtarzającej się parze Mikołaj + choinka',
+        },
+        {
+          id: 'asp3',
+          question: 'Jaki element pasuje zamiast znaku zapytania? ❄️⭐❄️⭐❄️⭐❄️?',
+          options: ['⭐', '❄️', '🎄', '🎅'],
+          correctAnswer: 0,
+          hint: 'Elementy naprzemienne powtarzają się regularnie',
+        },
+        {
+          id: 'asp4',
+          question: 'Znajdź element niepasujący: 🎄❄️🎄🎄❄️🎄',
+          options: ['Pierwsze drzewo', 'Drugie drzewo', 'Trzecie drzewo', 'Czwarte drzewo'],
+          correctAnswer: 3,
+          hint: 'Sprawdź, gdzie powinna być śnieżynka zamiast choinki',
+        },
+      ]
+    },
   {
     id: 'north-pole-words',
     name: 'Gry Słowne z Bieguna',
@@ -167,7 +167,7 @@ export const categories: Category[] = [
     questions: [
       {
         id: 'npw1',
-        question: 'Ułóż świąteczne słowo: OŁAKIŁM',
+        question: 'Ułóż świąteczne słowo: OŁAKIŁJM',
         options: ['Mikołaj', 'Kolęda', 'Choinka', 'Prezent'],
         correctAnswer: 0,
         hint: 'Kto przynosi prezenty?',
@@ -181,10 +181,10 @@ export const categories: Category[] = [
       },
       {
           id: 'npw3',
-          question: 'Które słowo można ułożyć z liter słowa "ŚWIĄTECZNY"?',
-          options: ['ŚWIĘTY', 'ŚCIĘTY', 'CZYN', 'Żadne z powyższych'],
-          correctAnswer: 2,
-          hint: 'To coś, co robimy - działanie!',
+          question: 'Ułóż świąteczne słowo: KBOAM',
+          options: ['Bombka', 'Kolęda', 'Mikołaj', 'Prezent'],
+          correctAnswer: 0,
+          hint: 'Ozdoba na choinkę',
         },
       {
         id: 'npw4',
@@ -194,41 +194,5 @@ export const categories: Category[] = [
         hint: 'Brakuje E i N',
       },
     ],
-  },
-  {
-    id: 'memory-challenge',
-    name: 'Wyzwanie Pamięciowe',
-    icon: '🧠',
-    description: 'Zadania na pamięć i przypominanie',
-    questions: [
-      {
-        id: 'mc1',
-        question: 'W piosence "12 Dni Świąt", jaki prezent jest dany pierwszego dnia?',
-        options: ['Dwie turkawki', 'Kuropatwa na gruszy', 'Trzy francuskie kury', 'Pięć złotych pierścieni'],
-        correctAnswer: 1,
-        hint: 'Jest na drzewie owocowym',
-      },
-      {
-        id: 'mc2',
-        question: 'Jak mają na imię dwa najbardziej znane renifery Mikołaja zaczynające się na "D"?',
-        options: ['Dancer i Dasher', 'Donner i Blitzen', 'Dasher i Donner', 'Dancer i Donner'],
-        correctAnswer: 2,
-        hint: 'Jeden pędzi, drugi grzmi',
-      },
-      {
-        id: 'mc3',
-        question: 'Co ożywiło Bałwana Frosty w bajce?',
-        options: ['Magiczny śnieg', 'Stary jedwabny kapelusz', 'Magiczna różdżka', 'Świąteczny duch'],
-        correctAnswer: 1,
-        hint: 'Coś, co nosisz na głowie',
-      },
-      {
-        id: 'mc4',
-        question: 'Na jakiej ulicy rozgrywa się akcja klasycznego filmu świątecznego "Cud"?',
-        options: ['Ulica Wiązów', '34. Ulica', 'Główna Ulica', 'Broadway'],
-        correctAnswer: 1,
-        hint: 'To liczba',
-      },
-    ],
-  },
+  }
 ];
